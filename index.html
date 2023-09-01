@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="registercontainer">
+        <h1>Registration Form</h1>
+
+        <form  action="" id="registrationForm" name="registrationForm" onsubmit="return registrationform()">
+           
+            <span><label for="fullName">Full Name:</label></span> <input type="text" id="fullName" name="fullname" class="sameclass"placeholder="Your Full Name"> <br>
+            <span class="errMessage"  id="errfullName"></span><br><br>
+
+
+            <span> <label for="email">Email:</label></span><input type="email" id="email" name="email" class="sameclass" placeholder="Your Email Address"><br>
+            <span  class="errMessage" id="errEmail"></span><br><br>
+
+            <span><label for="password">Password:<span class="example">*Must be follow this pattern Example@123!</span>
+            </label></span> <input type="password" id="password" class="sameclass" name="password" placeholder="Create Password"> <br>
+            <span class="errMessage"  id="errPassword"></span><br><br>
+
+
+            <span><label for="confirmPassword">Confirm Password:</label></span> <input type="password" class="sameclass" id="confirmPassword"
+                name="confirmPassword" placeholder="Confirm Your Password"> <br>
+            <span  class="errMessage" id="errConfirmPassword"></span><br>
+
+            <span><label for="age">Age:</label></span> <input type="number" id="age" class="sameclass" name="age" placeholder="Your Age"> <br>
+            <span  class="errMessage" id="errAge"></span><br>
+
+
+            <span><label for="gender">Gender:</label></span> <br>
+            <input type="radio" name="gender" value="male" class="box">Male
+            <input type="radio" name="gender" value="Female" class="box">Female
+            <input type="radio" name=gender value="others" class="box">Others <br>
+            <span  class="errMessage" id="errGender"></span><br>
+
+
+            <span><label for="interests">Interests:</label></span> <br>
+            <input type="checkbox" name="interests" class="box">Sports
+            <input type="checkbox" name="interests" class="box">Music
+            <input type="checkbox" name="interests" class="box">Reading
+            <input type="checkbox" name="interests" class="box">Travelling <br>
+            <span  class="errMessage" id="errInterest"></span><br><br>
+
+            <span> <label for="country">Select a country:</label></span>
+            <select id="country" name="country" required>
+                <option value="afghanistan">Afghanistan</option>
+                <option value="albania">Albania</option>
+                <option value="algeria">Algeria</option>
+                <option value="andorra">Andorra</option>
+                <option value="angola">Angola</option>
+                <option value="antigua_and_barbuda">Antigua and Barbuda</option>
+                <option value="bahrain">Bahrain</option>
+                <option value="bangladesh">Bangladesh</option>
+                <option value="barbados">Barbados</option>
+                <option value="belarus">Belarus</option>
+                <option value="belgium">Belgium</option>
+                <option value="belize">Belize</option>
+                <option value="benin">Benin</option>
+                <option value="india">India</option>
+            </select><br><br>
+
+            <input type="submit" name="submit" class="btn" value="Register">
+
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
