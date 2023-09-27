@@ -8,24 +8,32 @@
 
 body {
     font-family: 'ADLaM Display', cursive;
-font-family: 'Reem Kufi', sans-serif;
+    font-family: 'Reem Kufi', sans-serif;
     background: linear-gradient(rgb(22, 56, 150), rgb(59, 88, 205), rgb(16, 78, 153));
-    font-weight: bold;
+    /* font-weight: bold; */
     color: rgb(222, 217, 217);
     letter-spacing: 2.5px;
-
-
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
 }
+
+h1 {
+    box-shadow: 1px 1px 15px 1px rgb(255, 242, 242);
+}
+
 .registercontainer {
-    margin-top: 10px;
-    margin-left: 500px;
-    height: 30%;
+    /* margin-top: 10px; */
+    /* margin-left: 500px; */
+    height: auto;
     justify-content: center;
     align-items: center;
     align-content: center;
-    width: 34%;
+    /* width: 34%; */
     border-radius: 14px;
-    background: linear-gradient(rgb(15, 16, 53), rgb(26, 36, 78), rgb(36, 46, 75), rgb(4, 16, 52));
+    background: linear-gradient(rgb(15, 16, 53, 0.9), rgb(26, 36, 78, 0.8), rgb(45, 58, 98), rgb(4, 16, 52));
+    /* background: rgb(0, 0, 0,0.5); */
     box-shadow: 0px 4px 4px 10px rgb(233, 178, 153);
 
 }
@@ -36,12 +44,14 @@ font-family: 'Reem Kufi', sans-serif;
     color: white;
 
 }
-.errMessage{
+
+.errMessage {
     color: red;
     font-size: 14px;
 }
+
 .registercontainer form {
-    margin-top: 10px;
+    margin-top: 14px;
 }
 
 .sameclass {
@@ -51,23 +61,27 @@ font-family: 'Reem Kufi', sans-serif;
     border: none;
     color: rgb(5, 5, 5);
     font-size: 15px;
-    border-radius: 40px;
+    border-radius: 7px;
     margin-top: 2px;
 }
 
 .sameclass:hover {
     box-shadow:
-        15px 15px 110px -2px rgb(255, 9, 9);
+        15px 15px 110px -2px rgb(246, 0, 0),
+        15px 15px 100px -2px rgb(255, 0, 128);
 }
 
 span {
     font-size: 18px;
     margin-left: 4px;
 }
-.example{
+
+.example {
     font-size: 14px;
-    color:orange;
+    color: orange;
+    font-weight: none;
 }
+
 .btn {
     width: 50%;
     padding: 5px;
@@ -100,7 +114,7 @@ span {
 }
 
 #country {
-    width: 50%;
+    /* width: 50%; */
     padding: 4px;
     border-radius: 7px;
     cursor: pointer;
@@ -108,6 +122,12 @@ span {
 }
 
 select {
-    background-color: rgba(178, 34, 34, 0.1);
+    background-color: rgba(17, 6, 6, 0.556);
+    color: white;
 
+}
+
+option {
+    background: rgb(8, 20, 58);
+    color: white;
 }
